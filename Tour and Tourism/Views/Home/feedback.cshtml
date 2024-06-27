@@ -1,0 +1,35 @@
+﻿@{
+    ViewBag.Title = "feedback";
+    Layout = "~/Views/Shared/GeneralMaster.cshtml";
+}
+
+<h1 style="margin-top:50px;font-family:'Rancho', cursive;font-size:8rem;text-shadow:2px 2px 2px red;color:black;text-align:center;">Feedback</h1>
+
+<div class="container-fluid" style="margin-bottom:150px;">
+    <div class="row">
+        <div class="col-md-3"></div>
+        <div class="col-md-6" style="border:groove;border-radius:20px;padding:50px;background:silver">
+
+
+            <form action="/home/feedback" method="post" enctype="multipart/form-data">
+                <label for="name" style="font-size:2.3rem;font-family:'Calisto MT'">Name :</label>
+                <input type="text" required class="form-control" placeholder="Enter Your Name" name="Name" style="width:40%;float:right;margin-right:150px" /><br /><br />
+
+
+
+
+                <label for="email" style="font-size:2.3rem;font-family:'Calisto MT'">E-mail :</label>
+                <input type="email" required style="width:40%;float:right;margin-right:150px" class="form-control" placeholder="Enter Email Here" name="Email" /><br /><br />
+
+                <label for="distric" style="font-size:2.3rem;font-family:'Calisto MT'">Feedback  :</label>
+                <textarea class="form-control" required style="width:40%;min-height:90px;float:right;margin-right:150px" name="Feedback" placeholder="Enter Your Feedback Here"></textarea><br /><br /><br />
+
+                <center><button type="submit" class="form-control btn btn-success hvr-pop" style="width:190px;margin-top:50px;font-size:2rem;">Send-Feedback</button></center>
+
+
+            </form>
+
+        </div><div class="col-md-3"></div>
+    </div>
+</div>
+

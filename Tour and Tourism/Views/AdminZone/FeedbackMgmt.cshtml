@@ -1,0 +1,34 @@
+﻿
+@{
+    ViewBag.Title = "FeedbackMgmt";
+    Layout = "~/Views/Shared/AdminMaster.cshtml";
+}
+
+@model List<Tour_and_Tourism.Models.TBL_feedback>
+<div class="row">
+    <table class="table table-borderd" style="background:linear-gradient(silver,gold)">
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>E-mail</th>
+            <th>Feedback</th>
+            <th>Feddate</th>
+
+        </tr>
+        @foreach (var x in Model)
+        {
+            <tr>
+                <td>@x.Id</td>
+
+                <td>@x.Name</td>
+                <td>@x.Email</td>
+                <td>@x.Feedback</td>
+                <td>@x.Feddate</td>
+
+
+            </tr>
+        }
+    </table>
+</div>
+
+

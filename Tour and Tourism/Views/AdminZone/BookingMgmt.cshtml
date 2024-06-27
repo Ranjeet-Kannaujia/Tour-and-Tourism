@@ -1,0 +1,44 @@
+﻿
+@{
+    ViewBag.Title = "BookingMgmt";
+    Layout = "~/Views/Shared/AdminMaster.cshtml";
+}
+
+@model List<Tour_and_Tourism .Models.TBL_Booking>
+
+<div class="row">
+    <table class="table table-borderd" style="background:linear-gradient(silver,gold)">
+        <tr>
+            <th>Id</th>
+            <th>Travel</th>
+            <th>Destination</th>
+            <th>Checkin</th>
+            <th>Person</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Phone</th>
+            <th>Country</th>
+            <th>City</th>
+            <th>Message</th>
+
+        </tr>
+        @foreach (var x in Model)
+        {
+            <tr>
+                <td>@x.id</td>
+                <td>@x.travel</td>
+                <td>@x.destination</td>
+                <td>@x.checkin</td>
+                <td>@x.person</td>
+                <td>@x.name</td>
+                <td>@x.email</td>
+                <td>@x.phone</td>
+                <td>@x.country</td>
+                <td>@x.city</td>
+                <td>@x.msg</td>
+
+            </tr>
+        }
+    </table>
+</div>
+

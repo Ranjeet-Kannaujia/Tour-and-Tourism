@@ -1,0 +1,117 @@
+﻿
+@{
+    ViewBag.Title = "Booking_form";
+    Layout = "~/Views/Shared/GeneralMaster.cshtml";
+}
+
+<h1 style="margin-top:150px;font-family:'Rancho', cursive;font-size:8rem;text-shadow:2px 2px 2px red;color:black;text-align:center;">Tour & Travel Reservation Booking Form</h1>
+
+
+<script>
+    function getCaptcha()
+    {
+        var strArr = "0123456789abcdefzxwvkj";
+        var code = "";
+        for (var i = 0; i < 5; i++)
+        {
+            code = code + strArr[Math.floor(Math.random() * 20)];
+
+        }
+        return code;
+    }
+    function demo()
+    {
+        var c = getCaptcha();
+        document.getElementById("ct1").innerHTML = c;
+        document.getElementById("hdn1").value = c;
+    }
+</script>
+
+<div class="container-fluid">
+    <div class="row" style="margin-bottom:150px;">
+        <div class="col-md-2"></div>
+        <div class="col-md-8" style="border:groove;border-radius:20px;padding:50px;background:silver">
+            <form action="/home/Booking_form" method="post">
+                <p style="font-family:'Rancho', cursive;font-size:5rem">Your Travel Plan detail</p> <br /><br />
+                <lable for="mode" style="font-size:2.3rem;">Travelling Mode :</lable>
+                <i class="fas fa-plane-departure" style="font-size:2rem">&nbsp&nbsp</i>
+                <select name="travel" style="margin-left:35px">
+
+                    <option value="By Road Ways">By Road Ways </option>
+                    <option value="By Train">By Train</option>
+                    <option value="By Flight">By Flight</option>
+
+                </select> <br /><br />
+
+
+                <lable for="destination" style="font-size:2.3rem;">Destination :</lable>
+                <i class="fas fa-archway" style="font-size:2rem">&nbsp&nbsp&nbsp&nbsp</i>
+                <input type="text" class="form-control" required placeholder="--Choose Your Destination Here--" name="destination" style="width:38%;float:right;margin-right:320px" list="des" />
+                <datalist id="des">
+
+                    <option value="India">
+                    <option value="Russia">
+                    <option value="Chaina">
+                    <option value="Dubai">
+                    <option value="Singapore">
+                    <option value="Peris">
+                    <option value="Newyork">
+
+                </datalist>
+                <br /><br />
+                <lable for="Check-in" style="font-size:2rem;">Check-in :</lable>
+                <i class="	fas fa-map-marked-alt" style="font-size:2rem"></i>
+                <input type="date" name="checkin" required style="width:40%;float:right;margin-right:300px" class="form-control" style="width:38%" />
+                <br /><br />
+                <lable for="No.ofPersons" style="font-size:2rem;">Number Of persons :</lable>
+                <i class="fas fa-user" style="font-size:2rem"></i>
+                <input type="number" name="person" required style="width:40%;float:right;margin-right:300px" class="form-control" placeholder="Enter Number Of Persons" style="width:38%" />
+
+                <br /><br />
+                <lable for="Name" style="font-size:2rem;">Name :</lable>
+                <i class="	fas fa-align-justify" style="font-size:2rem"></i>
+                <input type="text" name="name" required style="width:40%;float:right;margin-right:300px" class="form-control" placeholder="Enter Name Here" style="width:38%" />
+
+                <br /><br />
+                <lable for="email" style="font-size:2rem;">E-mail :</lable>
+                <i class="	fas fa-envelope" style="font-size:2rem"></i>
+                <input type="text" name="email" required style="width:40%;float:right;margin-right:300px" class="form-control" placeholder="abc@gmail.com" style="width:38%" />
+
+                <br /><br />
+                <lable for="phone" style="font-size:2rem;">Phone :</lable>
+                <i class="	fas fa-phone" style="font-size:2rem"></i>
+                <input type="text" name="phone" required style="width:40%;float:right;margin-right:300px" class="form-control" placeholder="+91xxxxxxxxxx" style="width:38%" />
+
+
+
+                <br /><br />
+                <lable for="Country" style="font-size:2rem;">Country :</lable>
+                <i class="fas fa-flag" style="font-size:2rem"></i>
+                <input type="text" name="country" required style="width:40%;float:right;margin-right:300px" class="form-control" placeholder="India" style="width:38%" />
+
+                <br /><br />
+                <lable for="City" style="font-size:2rem;">City :</lable>
+                <i class="fas fa-building" style="font-size:2rem"></i>
+                <input type="text" name="city" required style="width:40%;float:right;margin-right:300px" class="form-control" placeholder="Lucknow" style="width:38%" />
+
+                <br />   <br /><br />
+                <lable for="describe" style="font-size:2rem;">Describe Your Travel Requirments :</lable>
+                <br /><br />
+                <textarea class="form-control" name="msg" required name="District" placeholder="Write Your Requirments" style="min-height:100px"></textarea>
+
+
+
+                <i style="font-size:2.3rem;font-family:'Calisto MT'">Captcha Code</i>
+                <span style="color:red;font-size:30px;background:white"><strike id="ct1">drf4h</strike></span>&nbsp&nbsp&nbsp
+                <span class="fas fa-refresh" style="color:red;font-size:20px;cursor:pointer;" onclick="demo()">&nbsp&nbsp&nbsp<b style="font-family:'Calisto MT'">Refresh</b></span>
+
+                <input type="text" name="ct1" class="form-control" placeholder="Enter Captcha Code Here" required style="width:40%;float:right;margin-right:150px" />
+                <input type="hidden" id="hdn1" name="hdn1" />
+
+                <center>  <button type="submit" class="form-control btn btn-success hvr-pop" style="width:200px;height:50px;margin-top:50px;font-size:2rem;text-align:center;border-radius:20px;">Send Enquiry</button></center>
+            </form>
+        </div>
+        <div class="col-md-2"></div>
+    </div>
+</div>
+

@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="tourismModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Contact">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="varchar" MaxLength="100" />
+    <Property Name="Email" Type="varchar" MaxLength="100" />
+    <Property Name="Msg" Type="varchar" MaxLength="500" />
+    <Property Name="ContactDate" Type="varchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="TBL_Booking">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="travel" Type="varchar" MaxLength="100" />
+    <Property Name="destination" Type="varchar" MaxLength="100" />
+    <Property Name="checkin" Type="varchar" MaxLength="50" />
+    <Property Name="person" Type="varchar" MaxLength="100" />
+    <Property Name="name" Type="varchar" MaxLength="100" />
+    <Property Name="email" Type="varchar" MaxLength="200" />
+    <Property Name="phone" Type="varchar" MaxLength="15" />
+    <Property Name="country" Type="varchar" MaxLength="50" />
+    <Property Name="city" Type="varchar" MaxLength="50" />
+    <Property Name="msg" Type="varchar" MaxLength="2000" />
+  </EntityType>
+  <EntityType Name="TBL_feedback">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="varchar" MaxLength="100" />
+    <Property Name="Email" Type="varchar" MaxLength="150" />
+    <Property Name="Feedback" Type="varchar" MaxLength="2000" />
+    <Property Name="Feddate" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="TBL_Login">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="email" Type="varchar" MaxLength="50" />
+    <Property Name="password" Type="varchar" MaxLength="10" />
+  </EntityType>
+  <EntityType Name="TBL_registration">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="varchar" MaxLength="80" />
+    <Property Name="Mobile" Type="varchar" MaxLength="15" />
+    <Property Name="Gender" Type="varchar" MaxLength="20" />
+    <Property Name="Email" Type="varchar" MaxLength="200" />
+    <Property Name="Profile" Type="varchar(max)" />
+    <Property Name="Qualification" Type="varchar" MaxLength="50" />
+    <Property Name="Address" Type="varchar" MaxLength="250" />
+    <Property Name="District" Type="varchar" MaxLength="50" />
+    <Property Name="DOB" Type="varchar" MaxLength="50" />
+    <Property Name="RegDate" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityContainer Name="tourismModelStoreContainer">
+    <EntitySet Name="Contact" EntityType="Self.Contact" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TBL_Booking" EntityType="Self.TBL_Booking" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TBL_feedback" EntityType="Self.TBL_feedback" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TBL_Login" EntityType="Self.TBL_Login" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TBL_registration" EntityType="Self.TBL_registration" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

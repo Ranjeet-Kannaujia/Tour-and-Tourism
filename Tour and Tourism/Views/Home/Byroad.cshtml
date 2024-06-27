@@ -1,0 +1,67 @@
+﻿
+@{
+    ViewBag.Title = "Byroad";
+    Layout = "~/Views/Shared/GeneralMaster.cshtml";
+}
+
+<h1 style="margin-top:150px;font-family:'Rancho', cursive;font-size:5rem;text-shadow:2px 2px 2px red;color:silver;text-align:center;">By Road Ways</h1>
+<div class="container-fluid" style="margin-bottom:200px;">
+
+    <div class='row'>
+        <div class='col-md-12'>
+            <div class="carousel slide media-carousel" id="media">
+                <div class="carousel-inner">
+                    <div class="item  active">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <a class="thumbnail" href="#"><img class="hvr-pop" src="~/Content/travel/byroad/b88.jpg" style="min-height:400px;width:400px"></a>
+                            </div>
+                            <div class="col-md-4">
+                                <a class="thumbnail" href="#"><img alt="" class="hvr-pop" src="~/Content/travel/byroad/b111.jpg" style="min-height:400px;width:400px"></a>
+                            </div>
+                            <div class="col-md-4">
+                                <a class="thumbnail" href="#"><img alt="" class="hvr-pop" src="~/Content/travel/byroad/b44.jpg" style="min-height:400px;width:400px"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <a class="thumbnail" href="#"><img alt="" class="hvr-pop" src="~/Content/travel/byroad/b122.jpg" style="min-height:400px;width:400px"></a>
+                            </div>
+                            <div class="col-md-4">
+                                <a class="thumbnail" href="#"><img alt="" class="hvr-pop" src="~/Content/travel/byroad/b1.jpg" style="min-height:400px;width:400px"></a>
+                            </div>
+                            <div class="col-md-4">
+                                <a class="thumbnail" href="#"><img alt="" class="hvr-pop" src="~/Content/travel/byroad/b2.jpg" style="min-height:400px;width:400px"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <a class="thumbnail" href="#"><img alt="" class="hvr-pop" src="~/Content/travel/byroad/b99.jpg" style="min-height:400px;width:400px"></a>
+                            </div>
+                            <div class="col-md-4">
+                                <a class="thumbnail" href="#"><img alt="" class="hvr-pop" src="~/Content/travel/byroad/b77.jpg" style="min-height:400px;width:400px"></a>
+                            </div>
+                            <div class="col-md-4">
+                                <a class="thumbnail" href="#"><img alt="" class="hvr-pop" src="~/Content/travel/byroad/bw.jpg" style="min-height:400px;width:400px"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a data-slide="prev" href="#media" class="left carousel-control">‹</a>
+                <a data-slide="next" href="#media" class="right carousel-control">›</a>
+            </div>
+        </div>
+    </div>
+    <div>    <center><a href="/home/booking_form"> <button type="submit" class="btn btn-default hvr-pop" style="font-size:3rem;background:#3586ff;color:white;font-family:'Rancho', cursive;border:1px solid black;border-radius:20px;box-shadow:5px 5px 5px black">Book Now</button></a></center> </div>
+</div>
+$(document).ready(function() {
+  $('#media').carousel({
+    pause: true,
+    interval: false,
+  });
+});
+

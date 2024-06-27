@@ -1,0 +1,95 @@
+﻿@{
+    ViewBag.Title = "Registration";
+    Layout = "~/Views/Shared/GeneralMaster.cshtml";
+}
+
+
+<h1 style="margin-top:150px;font-family:'Rancho', cursive;font-size:8rem;text-shadow:2px 2px 2px red;color:black;text-align:center;">Register-Here</h1>
+
+
+<script>
+    function getCaptcha()
+    {
+        var strArr = "0123456789abcdefzxwvkj";
+        var code = "";
+        for (var i = 0; i < 5; i++)
+        {
+            code = code + strArr[Math.floor(Math.random() * 20)];
+
+        }
+        return code;
+    }
+    function demo()
+    {
+        var c = getCaptcha();
+        document.getElementById("ct1").innerHTML = c;
+        document.getElementById("hdn1").value = c;
+    }
+</script>
+
+<div class="container-fluid" style="margin-bottom:150px;">
+    <div class="row">
+        <div class="col-md-3"></div>
+        <div class="col-md-6" style="border:groove;border-radius:20px;padding:50px;background:silver">
+
+
+            <form action="/home/registration" method="post" enctype="multipart/form-data">
+                <label for="name" style="font-size:2.3rem;font-family:'Calisto MT'"> Name :</label>
+                <input type="text" required class="form-control" placeholder="Enter Your Name" name="Name" style="width:40%;float:right;margin-right:150px" /><br /><br />
+
+
+
+                <label for="Number" style="font-size:2.3rem;font-family:'Calisto MT'"> Mobile Number :</label>
+                <input type="number" required class="form-control" placeholder="Enter Mobile Number Here" name="Mobile" style="width:40%;float:right;margin-right:140px" /><br /><br />
+                <label for="Gender" style="font-size:2.3rem;font-family:'Calisto MT'">Gender :</label>
+                &nbsp&nbsp;
+                <i style="margin-left:130px;font-size:2rem">
+                    <input type="radio" name="Gender" value="Male" />Male &nbsp&nbsp;
+                    <input type="radio" name="Gender" value="Female" />Female &nbsp&nbsp;
+                    <input type="radio" name="Gender" value="Other" />Other <br /><br />
+                </i>
+
+                <label for="email" style="font-size:2.3rem;font-family:'Calisto MT'"> E-mail :</label>
+                <input type="email" required style="width:40%;float:right;margin-right:150px" class="form-control" placeholder="Enter Email Here" name="Email" /><br /><br />
+                <label for="select" style="font-size:2.3rem;font-family:'Calisto MT'">Select :</label> <input type="file" required style="width:40%;float:right;margin-right:150px" class="form-control" name="Profile" /><br /><br />
+
+                <label for="quali" style="font-size:2.3rem;font-family:'Calisto MT'">Qualification :</label>
+                <input type="text" class="form-control" required placeholder="--Search Qualification--" style="width:40%;float:right;margin-right:150px" name="Qualification" list="quali" />
+                <datalist id="quali">
+
+                    <option value="High-School">
+                    <option value="Intermediate">
+                    <option value="B.A.">
+                    <option value="Diploma">
+                    <option value="BSC">
+                    <option value="M.tech">
+                    <option value="B.tech">
+
+                </datalist>
+                <br /><br />
+                <label for="address" style="font-size:2.3rem;font-family:'Calisto MT'">Address  :</label>
+                <textarea class="form-control" required style="width:40%;float:right;margin-right:150px" name="Address" placeholder="Enter Addresss Here"></textarea><br /><br /><br />
+                <label for="distric" style="font-size:2.3rem;font-family:'Calisto MT'">Dsitrict  :</label>
+                <textarea class="form-control" required style="width:40%;float:right;margin-right:150px" name="District" placeholder="Enter District Here"></textarea><br /><br /><br />
+                <label for="DOB" style="font-size:2.3rem;font-family:'Calisto MT'">Date-Of-Birth :</label>
+                <input type="date" required style="width:40%;float:right;margin-right:150px" class="form-control" name="DOB" /><br /><br />
+
+
+
+
+                <i style="font-size:2.3rem;font-family:'Calisto MT'">Captcha Code</i>
+                <span style="color:red;font-size:30px;background:white"><strike id="ct1">drf4h</strike></span>&nbsp&nbsp&nbsp
+                <span class="fas fa-refresh" style="color:red;font-size:20px;cursor:pointer;" onclick="demo()">&nbsp&nbsp&nbsp<b style="font-family:'Calisto MT'">Refresh</b></span>
+
+                <input type="text" name="ct1" class="form-control" placeholder="Enter Captcha Code Here" required style="width:40%;float:right;margin-right:150px" />
+                <input type="hidden" id="hdn1" name="hdn1" />
+
+
+                <center>  <button type="submit" class="form-control btn btn-success hvr-pop" style="width:100px;margin-top:50px;font-size:2rem;text-align:center;">Submit</button></center>
+
+
+            </form>
+
+        </div><div class="col-md-3"></div>
+    </div>
+</div>

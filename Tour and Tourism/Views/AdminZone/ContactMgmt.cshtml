@@ -1,0 +1,28 @@
+﻿
+@{
+    ViewBag.Title = "ContactMgmt";
+    Layout = "~/Views/Shared/AdminMaster.cshtml";
+}
+@model List<Tour_and_Tourism.Models.Contact>
+<div class="row">
+    <table class="table table-borderd" style="background:linear-gradient(silver,gold)">
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>E-mail</th>
+            <th>Message</th>
+            <th>Contact Date</th>
+        </tr>
+        @foreach (var x in Model)
+        {
+            <tr>
+                <td>@x.id</td>
+                <td>@x.Name</td>
+                <td>@x.Email</td>
+                <td>@x.Msg</td>
+                <td>@x.ContactDate</td>
+            </tr>
+        }
+    </table>
+</div>
+

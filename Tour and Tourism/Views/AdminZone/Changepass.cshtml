@@ -1,0 +1,36 @@
+﻿
+@{
+    ViewBag.Title = "Changepass";
+    Layout = "~/Views/Shared/AdminMaster.cshtml";
+}
+
+<h1 style="margin-top:50px;font-family:'Calisto MT';font-size:4rem;text-shadow:2px 2px 2px red;color:black;text-align:center;">Change Password</h1>
+
+<div class="container-fluid" style="margin-bottom:150px;margin-top:50px">
+    <div class="row">
+        <div class="col-md-3"></div>
+        <div class="col-md-6" style="border:groove;border-radius:20px;padding:50px;background:silver">
+
+
+            <form action="/adminzone/changepass" method="post">
+                <label for="Old" style="font-size:1.4rem;font-family:'Calisto MT'">Old Password:</label>
+                <input type="password" name="OldPass" required class="form-control" placeholder="Enter Old Password" style="width:40%;float:right;margin-right:80px" /><br /><br />
+
+
+
+
+                <label for="New" style="font-size:1.4rem;font-family:'Calisto MT'">New Password :</label>
+                <input type="password" name="NewPass" required style="width:40%;float:right;margin-right:80px" class="form-control" placeholder="Enter New Password" /><br /><br />
+
+                <label for="Confirm" style="font-size:1.4rem;font-family:'Calisto MT'">Confirm Password  :</label>
+                <input type="password" name="ConfirmPass" required style="width:40%;float:right;margin-right:80px" class="form-control" placeholder="Confirm New Password" /><br /><br />
+
+                <center><button type="submit" class="form-control btn btn-success hvr-pop" style="width:180px;margin-top:50px;font-size:1rem;">Record Save</button></center>
+
+
+            </form>
+
+        </div><div class="col-md-3"></div>
+    </div>
+</div>
+

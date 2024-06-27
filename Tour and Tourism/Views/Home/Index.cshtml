@@ -1,0 +1,940 @@
+﻿@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/GeneralMaster.cshtml";
+}
+
+
+
+
+<div class="container-fluid" style="margin-top:10px">
+    <!-- parallax effects ka code -->
+    <section class="parallax">
+        <h2 id="text">Tour and Tourism</h2>
+        <img src="~/Content/travel/monutain_01.png" id="m1" />
+        <img src="~/Content/travel/trees_02.png" id="t2">
+        <img src="~/Content/travel/monutain_02.png" id="m2">
+        <img src="~/Content/travel/trees_01.png" alt="">
+        <img src="~/Content/travel/man.png" id="man">
+        <img src="~/Content/travel/plants.png" alt="plants">
+
+
+    </section>
+</div>
+
+
+<!--slider ka code-->
+<div class="container-fluid" style="padding:50px">
+    <div class="row">
+        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+            </ol>
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                    <img src="~/Content/travel/t3.jpg">
+                    <div class="carousel-caption">
+                        ...
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="~/Content/travel/by.png">
+                    <div class="carousel-caption">
+                        ...
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="~/Content/travel/t2.jpg">
+                    <div class="carousel-caption">
+                        ...
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="~/Content/travel/t1.jpg">
+                    <div class="carousel-caption">
+                        ...
+                    </div>
+                </div>
+                ...
+            </div>
+
+
+
+            <!-- Controls -->
+            <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+</div>
+
+
+
+
+<!-- Members and plus number wala code -->
+<section class="counts" id="counts" style="background:whitesmoke;color:#3586ff">
+    <div class="container">
+        <div class="row counters">
+            <div class="col-md-3 text-center">
+                <span data-toggle="counter-up">1084</span>
+                <p>SATISFIED CUSTOMERS +</p>
+            </div>
+            <div class="col-md-3 text-center">
+                <span data-toggle="counter-up">698</span>
+                <p>TOURISM PLACES +</p>
+            </div>
+            <div class="col-md-3 text-center">
+                <span data-toggle="counter-up">879</span>
+                <p>OUR TEAM MEMBERS +</p>
+            </div>
+            <div class="col-md-3 text-center">
+                <span data-toggle="counter-up">1012</span>
+                <p>EDUCATORS +</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!--Image and Paragraph-->
+
+
+<div class="container-fluid">
+    <div class="row" style="min-height:80rem;">
+        <div class="col-md-1"></div>
+        <div class="col-md-10">
+            <div class="col-md-6" data-aos="slide-right" data-aos-delay="500" style="min-height:80rem;">
+                <h1 style=" font-family: 'Rancho', cursive;">
+                    Online Accomodations Are Not <br />
+                    Always What They Seem
+                </h1>
+                <p style="font-size:2.1rem;font-family:'Modern No. 20'">
+                    Everyday peoples show up at hotels and short-term rentals only to discover that they are nothing like their online profile. Their Ocean view are look out at parking lot. The Interioris spotty and nonexient. Their accomodations feel cramped and not as clean as they shoud be.
+                    <br /><br />
+                    Resort style travel is a different story. When you arrive at your suiet, you will find it perfectly prepared for your stay. You will have all the comfort of a house with a full kitchen and washer and dryer. At the same time,You will enjoy resort eminities like an onsite experience manager, 24-Hours Security and relaxing Pools and space.
+                    <br /> <br />
+                    At TZORT, our online travel agency only works with exclusive resorts that meet the highest standards of cleanliness and hospitality. We take the stress out of onlime booking by provide accurate descriptions and a responsive team of travel agents. We think everyone should have the opportunity to travel resort style.
+                </p>
+
+            </div>
+
+
+
+
+
+
+
+
+            <div class="col-md-6" data-aos="slide-left" data-aos-delay="500" style="min-height:80rem;">
+                <img src="~/Content/travel/side.png" style="height:600px;width:600px;border-radius:20px;margin-top:120px;border:1px solid red" class="img img-responsive hvr-pop" alt="babu" />
+            </div>
+        </div>
+        <div class="col-md-1"></div>
+    </div>
+</div>
+
+<!--Video Ka Section-->
+<div class="container-fluid">
+    <video width="100%" controls autoplay>
+        <source src="~/Content/video.mp4" type="video/mp4" />
+    </video>
+</div>
+
+
+
+
+
+
+<section class="py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <img src="~/Content/travel/two.jpg" class="hvr-pop" data-aos="slide-down" data-aos-delay="500" style="width:100%">
+                <h2>Have a question?</h2>
+                <p>If you have any question please do not hesitate to drop us an email.</p>
+                <a href="#" class="text-danger">Ask the community</a>
+            </div>
+            <div class="col-md-4">
+                <img src="~/Content/travel/th2.jpg" class="hvr-pop" data-aos="slide-up" data-aos-delay="500" style="width:100%">
+                <h2>Watch and learn</h2>
+                <p>We help with product demo and let you experience the whole new world of technology.</p>
+                <a href="#" class="text-danger">Ask the community</a>
+            </div>
+            <div class="col-md-4">
+                <img src="~/Content/travel/te3.jpg" class="hvr-pop" data-aos="fade" data-aos-delay="500" style="width:100%">
+                <h2>Get quick tips</h2>
+                <p>Our team is trying all possible ways to assist you with our services.</p>
+                <a href="#" class="text-danger">Ask the community</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<!--
+aos-img effect ka section -->
+
+
+<h1 style="font-size: 5rem; margin-left: 50px;  font-family: 'Rancho', cursive;" class="hvr-float">Featured Resort</h1>
+<div class="row" style="margin-top: 20px;" data-aos="slide-left">
+    <div class="col-md-3" data-aos="fade-up" data-aos-delay="500">
+
+        <img src="~/Content/travel/1.jpg" class="img img-responsive hvr-pop" alt="babu" style="border:1px solid red" height="300" width="100%">
+        <p style="padding-top: 10px;">
+            Philipines  <span class="fa fa-star" style="color:gold;float: right;"><i style="color: black;font-family: monospace;">4.3</i></span> <br>
+            <b>Rosewood Maykoba Resort</b><br>
+            320 kilometers away <br>
+            <b>$129</b>/night
+        </p>
+
+
+
+    </div>
+    <div class="col-md-3" data-aos="slide-down">
+        <img src="~/Content/travel/4.jpg" class="img img-responsive hvr-pop" alt="babu" style="border:1px solid red" height="300" width="100%">
+        <p style="padding-top: 10px;">
+            Newyork  <span class="fa fa-star" style="color:gold;float: right;"><i style="color: black;font-family: monospace;">4.9</i></span> <br>
+            <b>Weldorf Astoria Resort</b><br>
+            420 kilometers away <br>
+            <b>$135</b>/night
+        </p>
+
+
+    </div>
+    <div class="col-md-3" data-aos="slide-up">
+
+        <img src="~/Content/travel/3.jpg" class="img img-responsive hvr-pop" alt="babu" style="border:1px  solid red" height="300" width="100%">
+
+        <p style="padding-top: 10px;">
+            Thailand  <span class="fa fa-star" style="color:gold;float: right;"><i style="color: black;font-family: monospace;">4.7</i></span> <br>
+            <b>Belmond Placio Resort</b><br>
+            560 kilometers away <br>
+            <b>$180</b>/night
+        </p>
+
+    </div>
+    <div class="col-md-3" data-aos="slide-left">
+        <img src="~/Content/travel/g.jpg" class="img img-responsive hvr-pop" alt="babu" style="border:1px solid red" height="300" width="100%">
+
+        <p style="padding-top: 10px;">
+            Goa  <span class="fa fa-star" style="color:gold;float: right;"><i style="color: black;font-family: monospace;">4.8</i></span> <br>
+            <b>Secrest OceanFront Resort</b><br>
+            385 kilometers away <br>
+            <b>$256</b>/night
+        </p>
+
+    </div>
+
+
+    <!--Row - 2-->
+    <div class="col-md-3" data-aos="fade-up" data-aos-delay="500">
+
+        <img src="~/Content/travel/p1.jpg" class="img img-responsive hvr-pop" alt="babu" style="border:1px solid red" height="300" width="100%">
+        <p style="padding-top: 10px;">
+            Chennai  <span class="fa fa-star" style="color:gold;float: right;"><i style="color: black;font-family: monospace;">4.3</i></span> <br>
+            <b>Plassio Resort</b><br>
+            225 kilometers away <br>
+            <b>$185</b>/night
+        </p>
+
+
+
+    </div>
+    <div class="col-md-3" data-aos="slide-down">
+        <img src="~/Content/travel/r.jpg" class="img img-responsive hvr-pop" alt="babu" style="border:1px solid red" height="300" width="100%">
+        <p style="padding-top: 10px;">
+            Peris  <span class="fa fa-star" style="color:gold;float: right;"><i style="color: black;font-family: monospace;">4.9</i></span> <br>
+            <b>Fansisco Resort</b><br>
+            120 kilometers away <br>
+            <b>$115</b>/night
+        </p>
+
+
+    </div>
+    <div class="col-md-3" data-aos="slide-up">
+
+        <img src="~/Content/travel/h2.jpg" class="img img-responsive hvr-pop" alt="babu" style="border:1px  solid red" height="300" width="100%">
+
+        <p style="padding-top: 10px;">
+            Shimla  <span class="fa fa-star" style="color:gold;float: right;"><i style="color: black;font-family: monospace;">4.7</i></span> <br>
+            <b>Skyfall Resort</b><br>
+            420 kilometers away <br>
+            <b>$350</b>/night
+        </p>
+
+    </div>
+    <div class="col-md-3" data-aos="slide-left">
+        <img src="~/Content/travel/m1.jpg" class="img img-responsive hvr-pop" alt="babu" style="border:1px solid red" height="300" width="100%">
+
+        <p style="padding-top: 10px;">
+            Banaras  <span class="fa fa-star" style="color:gold;float: right;"><i style="color: black;font-family: monospace;">4.8</i></span> <br>
+            <b>Assi Ghat</b><br>
+            185 kilometers away <br>
+            <b>$125</b>/night
+        </p>
+
+    </div>
+
+</div>
+<hr />
+
+
+<!--Service Section-->
+
+
+
+<section id="what-we-do">
+    <div class="container-fluid" data-aos="fade-up" data-aos-delay="500">
+        <h2 class="section-title  mb-2 h1"><b class="hvr-pop" style=" font-family: 'Rancho', cursive;">What we do</b></h2>
+        <p class="text-center text-muted h5">We always provide the best Faculity of Tourism.</p>
+        <div class="row mt-5">
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 col-xl-4">
+                <div class="card">
+                    <div class="card-block block-1">
+                        <h3 class="card-title hvr-float">Easy To Reach</h3>
+                        <p class="card-text">Our Website are provide an easy interface to our users. That Helps our Customers to intract with us very easily and it also improve relaibility.</p>
+                        <a href="" title="Read more" class="read-more">....<i class="fa fa-angle-double-right ml-2"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 col-xl-4">
+                <div class="card">
+                    <div class="card-block block-2">
+                        <h3 class="card-title hvr-float">Feedback</h3>
+                        <p class="card-text">We are always accept feedbacks form our customers.And It always help us to improve our website day by day.</p>
+                        <a href="" title="Read more" class="read-more">....<i class="fa fa-angle-double-right ml-2"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 col-xl-4">
+                <div class="card">
+                    <div class="card-block block-3">
+                        <h3 class="card-title hvr-float">24x7 Customer Care Support</h3>
+                        <p class="card-text">We have a broad team for resolving the issues for our customers. And Our 24x7 Hours support are alaways available for it.</p>
+                        <a href="" title="Read more" class="read-more">....<i class="fa fa-angle-double-right ml-2"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 col-xl-4">
+                <div class="card">
+                    <div class="card-block block-4">
+                        <h3 class="card-title hvr-float">Regular Updates</h3>
+                        <p class="card-text">We are update our website regularly and and do many types of impliments in our website.</p>
+                        <a href="" title="Read more" class="read-more">....<i class="fa fa-angle-double-right ml-2"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 col-xl-4">
+                <div class="card">
+                    <div class="card-block block-6">
+                        <h3 class="card-title hvr-float">Best Products</h3>
+                        <p class="card-text">We are providing the best products to our customers that help us to grow more and more. And also they got be setisfied by our tourism faculity.</p>
+                        <a href="" title="Read more" class="read-more">....<i class="fa fa-angle-double-right ml-2"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<hr />
+
+<!-- Resort Icon Section -->
+
+<div class="container-fluid" data-aos="zoom-out" data-aos-delay="500">
+    <h1 style=" font-family: 'Rancho', cursive;">Why stay at a resort?</h1>
+    <div class="row" id="b1" style="justify-content: center;align-items: center;display: flex;">
+
+        <div class="service">
+            <i class="fa fa-broom"></i>
+            <h2>Daily Clean</h2>
+            <p>After Enjoy the local sites, You will return <br> to a room that has been cleaned to highest standard</p>
+        </div>
+
+        <div class="service">
+            <i class="fa fa-ship"></i>
+            <h2>Discounted Experience</h2>
+            <p>
+                Our Partnership with the best luxury resorts result <br>
+                is discounted local Experiences.
+            </p>
+        </div>
+
+
+
+        <div class="service">
+            <i class="fas fa-user-shield"></i>
+            <h2>24 Hours Security</h2>
+            <p>You can relax knowing that the property <br> is dafe and secure.</p>
+        </div>
+        <div class="service">
+            <i class="fa fa-automobile"></i>
+            <h2>All Types of Vehicles Available</h2>
+            <p>In Our resort there is many types of vehicles <br> availble for the customers.</p>
+        </div>
+        <div class="service">
+            <i class="fa fa-book"></i>
+            <h2>Flexible Bookings</h2>
+            <p>Our one-two night minimum gives you <br> space for a quick event gateway.</p>
+        </div>
+        <div class="service">
+            <i class="fa icofont-fast-food"></i>
+            <h2>Onsite Food Resturant</h2>
+            <p>Skip the cooking and enjoy the <br> food at resort resturant.</p>
+        </div>
+        <div class="service">
+            <i class="fa fa-comments"></i>
+            <h2>Online Customer Support</h2>
+            <p>You won't have to relay on ameture host. <br> Professional  staff members are always call <br> away on our duties.</p>
+        </div>
+        <div class="service">
+            <i class="fa fa-street-view"></i>
+            <h2>Find Anything Easily</h2>
+            <p>You can Find Here any location Easily.</p>
+        </div>
+
+
+    </div>
+</div>
+<hr />
+
+<!-- testimonials -->
+
+<section class="testimonials" id="testimonials" style="background:#3586ff">
+    <div class="container-fluid">
+        <center>  <img src="~/Content/travel/rd.png" class="hvr-pop" style="box-shadow:2px 2px 2px white" /></center>
+        <div class="owl-carousel testimonials-carousel">
+            <div class="testimonial-wrap">
+                <div class="testimonial-item" style="border-radius:20px;border:1px solid red">
+                    <h3>Cameron Williamson</h3>
+                    <img src="~/Content/travel/ga.jpg" class="testimonial-img">
+                    <h5 style="color:gold">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </h5>
+
+                    <p>
+                        The Process was seamless, the price was  INCREDIBLE, and the team professinal <br /> and helpful. The resort itself had plenty of fun activities and amenities to keep <br /> the whole family entertained. Already  planning on returning next year! <br /><br />
+                        Country : <b>Russia</b>
+
+                    </p>
+
+                </div>
+            </div>
+            <div class="testimonial-wrap">
+                <div class="testimonial-item" style="border-radius:20px;border:1px solid red">
+                    <img src="~/Content/travel/h12.jpg" class="testimonial-img">
+                    <h3>Albert Flores</h3>
+                    <h5 style="color:gold">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </h5>
+                    <p>
+                        The Process was seamless, the price was  INCREDIBLE, and the team professinal <br /> and helpful. The resort itself had plenty of fun activities and amenities to keep <br /> the whole family entertained. Already  planning on returning next year!
+                        <br /><br />
+                        Country : <b>France</b>
+                    </p>
+                </div>
+            </div>
+            <div class="testimonial-wrap">
+                <div class="testimonial-item" style="border-radius:20px;border:1px solid red">
+                    <img src="~/Content/travel/ha.png" class="testimonial-img">
+                    <h3>Dianne Russell</h3>
+
+                    <h5 style="color:gold">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </h5><p>
+                        The Process was seamless, the price was  INCREDIBLE, and the team professinal <br /> and helpful. The resort itself had plenty of fun activities and amenities to keep <br /> the whole family entertained. Already  planning on returning next year!
+                        <br /><br />
+                        Country : <b>Japan</b>
+                    </p>
+                </div>
+            </div>
+            <div class="testimonial-wrap">
+                <div class="testimonial-item" style="border-radius:20px;border:1px solid red">
+                    <img src="~/Content/travel/haha.jpg" class="testimonial-img">
+                    <h3>Alice Wonder</h3>
+                    <h5 style="color:gold">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </h5>
+                    <p>
+                        The Process was seamless, the price was  INCREDIBLE, and the team professinal <br /> and helpful. The resort itself had plenty of fun activities and amenities to keep <br /> the whole family entertained. Already  planning on returning next year!
+                        <br /><br />
+                        Country : <b>Canada</b>
+                    </p>
+                </div>
+            </div>
+            <div class="testimonial-wrap">
+                <div class="testimonial-item" style="border-radius:20px;border:1px solid red">
+                    <img src="~/Content/travel/pw.jpg" class="testimonial-img">
+                    <h3>Home lander</h3>
+                    <h5 style="color:gold">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </h5>
+                    <p>
+                        The Process was seamless, the price was  INCREDIBLE, and the team professinal <br /> and helpful. The resort itself had plenty of fun activities and amenities to keep <br /> the whole family entertained. Already  planning on returning next year!
+                        <br /><br />
+                        Country : <b>China</b>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--Team Members ka code-->
+
+<section id="team" class="pb-5">
+    <div class="container" data-aos="zoom-out" data-aos-delay="500">
+        <h5 class="section-title h1" style=" font-family: 'Rancho', cursive;">OUR HARDWORKING TEAM</h5>
+        <div class="row">
+            <!-- Team member -->
+            <div class="col-xs-12 col-sm-6 col-md-4">
+                <div class="image-flip">
+                    <div class="mainflip flip-0">
+                        <div class="frontside">
+                            <div class="card">
+                                <div class="card-body text-center">
+                                    <p><img class=" img-fluid" src="~/Content/travel/main.jpg" alt="card image"></p>
+                                    <h4 class="card-title">Ranjeet Kanaujia</h4>
+                                    <p class="card-text">Founder & Director Of Tourism Villa </p>
+                                    <a href="#" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="backside">
+                            <div class="card">
+                                <div class="card-body text-center mt-4">
+                                    <h4 class="card-title">Ranjeet Kanaujia</h4>
+                                    <p class="card-text">
+                                        He is the Founder of this website, such a great personality.
+                                        <br />
+                                        <b>Qualifications :</b><br />
+                                        <i><b>Diploma </b>in Computer Science</i><br />
+                                        <i><b>B.Tech</b> in Computer Science</i><br />
+                                        <i><b>M.Tech </b>in Information Technology</i><br />
+                                        <i>Full Stack Developer Of <B>.Net</B></i><br />
+                                        <b>Experience :</b>12 Years +
+                                    </p>
+                                    <ul class="list-inline">
+                                        <li class="list-inline-item">
+                                            <a class="social-icon text-xs-center" target="_blank" href="#">
+                                                <i class="fa fa-facebook"></i>
+                                            </a>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <a class="social-icon text-xs-center" target="_blank" href="#">
+                                                <i class="fa fa-twitter"></i>
+                                            </a>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <a class="social-icon text-xs-center" target="_blank" href="#">
+                                                <i class="fa fa-skype"></i>
+                                            </a>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <a class="social-icon text-xs-center" target="_blank" href="#">
+                                                <i class="fa fa-google"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ./Team member -->
+            <!-- Team member -->
+            <div class="col-xs-12 col-sm-6 col-md-4">
+                <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                    <div class="mainflip">
+                        <div class="frontside">
+                            <div class="card">
+                                <div class="card-body text-center">
+                                    <p><img class=" img-fluid" src="~/Content/travel/11.jpg" alt="card image"></p>
+                                    <h4 class="card-title">Shivam Sharma</h4>
+                                    <p class="card-text">
+                                        He is the Chief Executive Officer Of this Website.
+
+                                    </p>
+                                    <a href="#" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="backside">
+                            <div class="card">
+                                <div class="card-body text-center mt-4">
+                                    <h4 class="card-title">Shivam Sharma</h4>
+                                    <p class="card-text">
+                                        He is the Chief Executive Officer Of this Website.
+                                        <br />
+                                        <b>Qualifications :</b><br />
+                                        <i><b>Diploma </b>in Pharmacy</i><br />
+                                        <i><b>B.Tech</b> in Pharmacy</i><br />
+                                        <i>Developer Of <B>.net</B></i><br />
+                                        <b>Experience :</b>4 Years +
+                                    </p>
+                                    <ul class="list-inline">
+                                        <li class="list-inline-item">
+                                            <a class="social-icon text-xs-center" target="_blank" href="#">
+                                                <i class="fa fa-facebook"></i>
+                                            </a>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <a class="social-icon text-xs-center" target="_blank" href="#">
+                                                <i class="fa fa-twitter"></i>
+                                            </a>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <a class="social-icon text-xs-center" target="_blank" href="#">
+                                                <i class="fa fa-skype"></i>
+                                            </a>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <a class="social-icon text-xs-center" target="_blank" href="#">
+                                                <i class="fa fa-google"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ./Team member -->
+            <!-- Team member -->
+            <div class="col-xs-12 col-sm-6 col-md-4">
+                <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                    <div class="mainflip">
+                        <div class="frontside">
+                            <div class="card">
+                                <div class="card-body text-center">
+                                    <p><img class=" img-fluid" src="~/Content/travel/333.jpg" alt="card image"></p>
+                                    <h4 class="card-title">Abhishek Mishra</h4>
+                                    <p class="card-text">Hr Of Tourism Villa</p>
+                                    <a href="#" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="backside">
+                            <div class="card">
+                                <div class="card-body text-center mt-4">
+                                    <h4 class="card-title">Abhishek Mishra</h4>
+                                    <p class="card-text">
+                                        He is the Human Resource Officer Of this Website.
+                                        <br />
+                                        <b>Qualifications :</b><br />
+                                        <i><b>Diploma </b>in Communication</i><br />
+                                        <i><b>B.Tech</b> in Pharmacy</i><br />
+                                        <i>Developer Of <B>php</B></i><br />
+                                        <b>Experience :</b>8 Years +
+                                    </p>
+                                    <ul class="list-inline">
+                                        <li class="list-inline-item">
+                                            <a class="social-icon text-xs-center" target="_blank" href="#">
+                                                <i class="fa fa-facebook"></i>
+                                            </a>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <a class="social-icon text-xs-center" target="_blank" href="#">
+                                                <i class="fa fa-twitter"></i>
+                                            </a>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <a class="social-icon text-xs-center" target="_blank" href="#">
+                                                <i class="fa fa-skype"></i>
+                                            </a>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <a class="social-icon text-xs-center" target="_blank" href="#">
+                                                <i class="fa fa-google"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ./Team member -->
+            <!-- Team member -->
+            <div class="col-xs-12 col-sm-6 col-md-4">
+                <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                    <div class="mainflip">
+                        <div class="frontside">
+                            <div class="card">
+                                <div class="card-body text-center">
+                                    <p><img class=" img-fluid" src="~/Content/travel/22.jpg" alt="card image"></p>
+                                    <h4 class="card-title">Anand Tripathi</h4>
+                                    <p class="card-text">He is the Front-end Developer.</p>
+                                    <a href="#" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="backside">
+                            <div class="card">
+                                <div class="card-body text-center mt-4">
+                                    <h4 class="card-title">Anand Tripathi</h4>
+                                    <p class="card-text">
+                                        He is the Front-end Developer
+                                        <br />
+                                        <b>Qualifications :</b><br />
+                                        <i><b>Diploma </b>in Computer</i><br />
+                                        <i><b>B.Tech</b> in English</i><br />
+                                        <i>Developer Of <B>python</B></i><br />
+                                        <b>Experience :</b>4 Years +
+                                    </p>
+                                    <ul class="list-inline">
+                                        <li class="list-inline-item">
+                                            <a class="social-icon text-xs-center" target="_blank" href="#">
+                                                <i class="fa fa-facebook"></i>
+                                            </a>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <a class="social-icon text-xs-center" target="_blank" href="#">
+                                                <i class="fa fa-twitter"></i>
+                                            </a>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <a class="social-icon text-xs-center" target="_blank" href="#">
+                                                <i class="fa fa-skype"></i>
+                                            </a>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <a class="social-icon text-xs-center" target="_blank" href="#">
+                                                <i class="fa fa-google"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ./Team member -->
+            <!-- Team member -->
+            <div class="col-xs-12 col-sm-6 col-md-4">
+                <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                    <div class="mainflip">
+                        <div class="frontside">
+                            <div class="card">
+                                <div class="card-body text-center">
+                                    <p><img class=" img-fluid" src="~/Content/travel/44.jpg" alt="card image"></p>
+                                    <h4 class="card-title">Ankit Prajapati</h4>
+                                    <p class="card-text">He a best Back-end developer Ever.</p>
+                                    <a href="#" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="backside">
+                            <div class="card">
+                                <div class="card-body text-center mt-4">
+                                    <h4 class="card-title">Ankit Prajapati</h4>
+                                    <p class="card-text">
+                                        He is the Best Back-end developer ever.
+                                        <br />
+                                        <b>Qualifications :</b><br />
+                                        <i><b>Diploma </b>in Java</i><br />
+                                        <i><b>B.Tech</b> in Pharmacy</i><br />
+                                        <i>Developer Of <B>ruby</B></i><br />
+                                        <b>Experience :</b>5Years +
+                                    </p>
+                                    <ul class="list-inline">
+                                        <li class="list-inline-item">
+                                            <a class="social-icon text-xs-center" target="_blank" href="#">
+                                                <i class="fa fa-facebook"></i>
+                                            </a>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <a class="social-icon text-xs-center" target="_blank" href="#">
+                                                <i class="fa fa-twitter"></i>
+                                            </a>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <a class="social-icon text-xs-center" target="_blank" href="#">
+                                                <i class="fa fa-skype"></i>
+                                            </a>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <a class="social-icon text-xs-center" target="_blank" href="#">
+                                                <i class="fa fa-google"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ./Team member -->
+            <!-- Team member -->
+            <div class="col-xs-12 col-sm-6 col-md-4">
+                <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                    <div class="mainflip">
+                        <div class="frontside">
+                            <div class="card">
+                                <div class="card-body text-center">
+                                    <p><img class=" img-fluid" src="~/Content/travel/ha.png" alt="card image"></p>
+                                    <h4 class="card-title">Senorita</h4>
+                                    <p class="card-text">She is the manager of tourism villa.</p>
+                                    <a href="#" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="backside">
+                            <div class="card">
+                                <div class="card-body text-center mt-4">
+                                    <h4 class="card-title">Senorita</h4>
+                                    <p class="card-text">
+                                        She is the Manager Of Tourism Villa.
+                                        <br />
+                                        <b>Qualifications :</b><br />
+                                        <i><b>Diploma </b>in Arts.</i><br />
+                                        <i><b>B.Tech</b> in Communication</i><br />
+                                        <i>Developer Of <B>.net</B></i><br />
+                                        <b>Experience :</b>6 Years +
+                                    </p>
+                                    <ul class="list-inline">
+                                        <li class="list-inline-item">
+                                            <a class="social-icon text-xs-center" target="_blank" href="#">
+                                                <i class="fa fa-facebook"></i>
+                                            </a>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <a class="social-icon text-xs-center" target="_blank" href="#">
+                                                <i class="fa fa-twitter"></i>
+                                            </a>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <a class="social-icon text-xs-center" target="_blank" href="#">
+                                                <i class="fa fa-skype"></i>
+                                            </a>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <a class="social-icon text-xs-center" target="_blank" href="#">
+                                                <i class="fa fa-google"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ./Team member -->
+
+        </div>
+    </div>
+</section>
+<!-- Team -->
+<!-- paragraph  -->
+
+
+<section class="sec">
+    <h2 class="hvr-fade" data-aos="slide-down" data-aos-delay="500" style=" font-family: 'Rancho', cursive;">Conclusion</h2>
+    <p data-aos="zoom-in" data-aos-delay="500" style="font-size:2rem;font-family:'Bell MT'">
+        Tourism offers great opportunities for emerging economies and developing countries. It creates jobs, strengthens the local economy, contributes to local infrastructure development and can help to conserve the natural environment and cultural assets and traditions, and to reduce poverty and inequality. The vast and diverse Indian sub-continent ranges from the Himalayas in the north to the Indian Ocean in the south. India's intoxicatingly rich history can be traced back to 2500 BC, when the first known civilization settled along the Indus River. A place with great variations in geography and climate, India is a storehouse of varied and colorful dimensions. It is a land of many seasons, of exuberant celebrations and colorful festivals reflecting the joie de vivre of the Indian people. <br />
+        The mighty Himalayas, Thar Desert, the backwaters of Kerala and the streets of Delhi, all have plethora to offer. India is a perfect destination for holiday makers, nature lovers and adventure seekers. The rich cultures of India and nature's compelling beauty have made this country one of the most sought after places in the world. It is blessed with unique geographical conditions that suit the tastes of all the visitors coming to this unique continent. India with its pleasing natural beauty and monumental sight is becoming a hot tourist destination in the world. Visit any part of this country and its alluring beauty will fascinate you with its charm.
+    </p>
+</section>
+
+
+
+
+<!-- parallax ki javascript -->
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+<script>
+    gsap.from("#m1",{
+        scrollTrigger : {
+            scrub:true
+        },
+        y:100,
+    })
+    gsap.from("#m2",{
+        scrollTrigger : {
+            scrub:true
+        },
+        y:50,
+    })
+    gsap.from("#t2",{
+        scrollTrigger : {
+            scrub:true
+        },
+        x:-50,
+    })
+    gsap.from("#t1",{
+        scrollTrigger : {
+            scrub:true
+        },
+        x:50,
+    })
+    gsap.from("#man",{
+        scrollTrigger : {
+            scrub:true
+        },
+        x:-250,
+    })
+    gsap.from("#plants",{
+        scrollTrigger : {
+            scrub:true
+        },
+        x:-50,
+    })
+    gsap.from("#text",{
+        scrollTrigger : {
+            scrub:true
+        },
+        x:300,
+    })
+
+</script>
+
+
+<!-- Members and plus number wale code ki js-->
+<script src="~/Content/travel/jquery.min.js"></script>
+<script src="~/Content/travel/jquery.waypoints.min.js"></script>
+<script src="~/Content/travel/counterup.min.js"></script>
+<script src="~/Content/travel/owl.carousel.min.js"></script>
+<script src="~/Content/travel/aos.js"></script>
+<script src="~/Content/travel/main.js"></script>

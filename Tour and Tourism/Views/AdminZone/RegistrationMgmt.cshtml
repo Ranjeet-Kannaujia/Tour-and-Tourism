@@ -1,0 +1,50 @@
+﻿
+@{
+    ViewBag.Title = "RegistrationMgmt";
+    Layout = "~/Views/Shared/AdminMaster.cshtml";
+}
+
+@model List<Tour_and_Tourism.Models.TBL_registration>
+<div class="row">
+    <table class="table table-borderd" style="background:linear-gradient(silver,gold)">
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Mobile</th>
+            <th>Gender</th>
+            <th>E-mail</th>
+            <th>Profile</th>
+            <th>Qualification</th>
+            <th>Address</th>
+            <th>District</th>
+            <th>DOB</th>
+            <th>RegDate</th>
+            <th>Delete</th>
+            <th>Update</th>
+        </tr>
+        @foreach (var x in Model)
+        {
+            <tr>
+                <td>@x.Id</td>
+                <td>@x.Name</td>
+                <td>@x.Mobile</td>
+                <td>@x.Gender</td>
+                <td>@x.Email</td>
+
+                <td>@x.Profile</td>
+                <td>@x.Qualification</td>
+                <td>@x.Address</td>
+                <td>@x.District</td>
+                <td>@x.DOB</td>
+                <td>@x.RegDate</td>
+
+                <td><a href="/adminzone/delete?m=@x.Email"><i class="fas fa-trash" style="color:black"></i></a></td>
+                <td><a href="/adminzone/updaterecord?U=@x.Email"><i class="fas fa-edit" style="color:black"></i></a></td>
+
+            </tr>
+
+
+        }
+    </table>
+</div>
+

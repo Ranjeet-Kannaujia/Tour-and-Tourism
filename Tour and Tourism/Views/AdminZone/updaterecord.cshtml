@@ -1,0 +1,84 @@
+﻿
+@{
+    ViewBag.Title = "updaterecord";
+    Layout = "~/Views/Shared/AdminMaster.cshtml";
+}
+
+@model Tour_and_Tourism.Models.TBL_registration
+
+<h1 style="margin-top:150px;font-size:5rem;text-shadow:2px 2px 2px red;color:black;text-align:center;">Register-Here</h1>
+
+
+<div class="container-fluid" style="margin-bottom:150px;margin-top:20px">
+    <div class="row">
+        <div class="col-md-3"></div>
+        <div class="col-md-6" style="border:groove;border-radius:20px;padding:50px;background:silver">
+
+
+            <form action="/adminzone/updaterecord" method="post" enctype="multipart/form-data">
+                <input type="hidden" name="Email" value="@Model.Email" />
+                <label for="name" style="font-size:2.3rem;font-family:'Calisto MT'"> Name :</label>
+                <input type="text" required class="form-control" value="@Model.Name" placeholder="Enter Your Name" name="Name" style="width:40%;float:right;margin-right:150px" /><br /><br />
+
+
+
+                <label for="Number" style="font-size:2.3rem;font-family:'Calisto MT'"> Mobile Number :</label>
+                <input type="number" required class="form-control" value="@Model.Mobile" placeholder="Enter Mobile Number Here" name="Mobile" style="width:40%;float:right;margin-right:140px" /><br /><br />
+
+                Gender@{
+                    string Gender = Model.Gender.ToString();
+                    if (Gender == "Male")
+                    {
+                        <input type="radio" name="Gender" value="Male" checked="checked" />
+                        <span>Male</span>
+
+                        <input type="radio" name="Gender" value="Female" checked="checked" />
+                        <span>Female</span>
+
+                        <input type="radio" name="Gender" value="Other" checked="checked" />
+                        <span>Other</span>
+                    }
+                    else
+                    {
+                        <input type="radio" name="Gender" value="Female" checked="checked" />
+                        <span>Female</span>
+
+                        <input type="radio" name="Gender" value="Male" checked="checked" />
+                        <span>Male</span>
+                    }
+                }
+
+                <br /><br />
+                <input type="file" value="@Model.Profile" name="Profile" class="form-control">
+
+
+                <label for="quali" style="font-size:2.3rem;font-family:'Calisto MT'">Qualification :</label>
+                <input type="text" class="form-control" value="@Model.Qualification" required placeholder="--Search Qualification--" style="width:40%;float:right;margin-right:150px" name="Qualification" list="quali" />
+                <datalist id="quali">
+
+                    <option value="High-School">
+                    <option value="Intermediate">
+                    <option value="B.A.">
+                    <option value="Diploma">
+                    <option value="BSC">
+                    <option value="M.tech">
+                    <option value="B.tech">
+
+                </datalist>
+                <br /><br />
+                <label for="address" style="font-size:2.3rem;font-family:'Calisto MT'">Address  :</label>
+                <textarea class="form-control" required style="width:40%;float:right;margin-right:150px" name="Address" placeholder="Enter Addresss Here">@Model.Address</textarea><br /><br /><br />
+                <label for="distric" style="font-size:2.3rem;font-family:'Calisto MT'">Dsitrict  :</label>
+                <textarea class="form-control" required style="width:40%;float:right;margin-right:150px" name="District" placeholder="Enter District Here">@Model.District</textarea><br /><br /><br />
+                <label for="DOB" style="font-size:2.3rem;font-family:'Calisto MT'">Date-Of-Birth :</label>
+                <input type="date" required style="width:40%;float:right;margin-right:150px" value="@Model.DOB" class="form-control" name="DOB" /><br /><br />
+
+
+                <center>  <button type="submit" class="form-control btn btn-success hvr-pop" style="width:150px;margin-top:50px;font-size:2rem;text-align:center;">Submit</button></center>
+
+
+            </form>
+
+        </div><div class="col-md-3"></div>
+    </div>
+</div>
